@@ -73,7 +73,8 @@ Standalone mode is the default mode for Zoraxy. This allows a single account to 
 #### Linux
 
 ```bash
-sudo ./zoraxy -port=:8000
+#! /bin/bash
+nohup sudo ./zoraxy -port=:8000 >/dev/null 2>&1 &
 ```
 
 #### Windows
